@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mahmoud Soliman — Backend Developer (.NET, ASP.NET Core, Clean Architecture, AWS)."
+    />
+    <title>Mahmoud Soliman | Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-effects" aria-hidden="true">
+      <canvas
+        id="ambient-canvas"
+        class="ambient-canvas"
+        aria-hidden="true"
+      ></canvas>
+      <div class="gradient-overlay" aria-hidden="true"></div>
+      <div class="parallax-orb parallax-orb-a" aria-hidden="true"></div>
+      <div class="parallax-orb parallax-orb-b" aria-hidden="true"></div>
+      <div class="pointer-glow" aria-hidden="true"></div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="#home">Mahmoud Soliman</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Backend Developer</p>
+          <h1>Mahmoud Soliman</h1>
+          <p class="title">
+            .NET | ASP.NET Core | Clean Architecture | AWS Certified Cloud
+            Practitioner
+          </p>
+          <p class="lead">
+            I’m finishing my CS degree and spending my time building backend
+            systems that can survive real production traffic, not only classroom
+            demos.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/Mahmoud_Soliman_CV.pdf" download
+              >Download CV</a
+            >
+            <a class="btn btn-secondary" href="#work">View Projects</a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img
+            src="./assets/images/mahmoud-soliman-profile.jpg"
+            onerror="this.src='./assets/images/profile-placeholder.svg'"
+            alt="Portrait of Mahmoud Soliman, backend developer"
+            loading="eager"
+            width="440"
+            height="520"
+          />
+        </figure>
+      </section>
+
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+        <p>
+          I’m a backend developer at Fayoum University (B.Sc. Computer Science
+          &amp; Artificial Intelligence, expected mid-2026). What keeps me
+          interested is understanding how software behaves after deployment:
+          scaling, reliability, security, and the trade-offs behind each
+          decision.
+        </p>
+        <p>
+          Most of my recent work is in C# and ASP.NET Core with Clean
+          Architecture patterns. I also completed AWS cloud training and started
+          applying those concepts in containerized deployments.
+        </p>
+      </section>
+
+      <section id="work" class="section">
+        <h2 class="section-title">Work</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <div class="project-head">
+              <h3>TaskFlow — Project Management REST API</h3>
+              <span class="project-tag">Flagship</span>
+            </div>
+            <p>
+              Multi-tenant backend with strict four-layer Clean Architecture,
+              Unit of Work and Generic Repository, and granular four-tier RBAC
+              using ASP.NET Core Identity. Includes Arabic/English localization
+              and AWS deployment with ECS Fargate, ALB, and RDS.
+            </p>
+            <ul class="chip-list" aria-label="TaskFlow tech stack">
+              <li>.NET</li>
+              <li>ASP.NET Core</li>
+              <li>EF Core</li>
+              <li>Docker</li>
+              <li>AWS ECS Fargate</li>
+              <li>SQL Server</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/MAHMOUD-AHMEDD/TaskManagement"
+              target="_blank"
+              rel="noreferrer"
+              >View on GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <div class="project-head">
+              <h3>Distributed Search Engine</h3>
+              <span class="project-tag">Team Project</span>
+            </div>
+            <p>
+              Scraping and indexing pipeline for 100,000+ URLs using Python and
+              Hadoop in Docker. Built a .NET MVC backend and SQL Server schema,
+              with cross-platform Docker environments for development.
+            </p>
+            <ul class="chip-list" aria-label="Search engine tech stack">
+              <li>.NET</li>
+              <li>ASP.NET Core MVC</li>
+              <li>Python</li>
+              <li>Hadoop</li>
+              <li>Docker</li>
+              <li>SQL Server</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/MAHMOUD-AHMEDD/Search_Engine"
+              target="_blank"
+              rel="noreferrer"
+              >View on GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <div class="project-head">
+              <h3>University Learning Platform</h3>
+              <span class="project-tag">REST API</span>
+            </div>
+            <p>
+              Bilingual API (Arabic/English) connecting doctors, students, and
+              admins with role-based access, subscription notifications, and
+              user/content management workflows.
+            </p>
+            <ul class="chip-list" aria-label="University platform tech stack">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>REST API</li>
+              <li>Multi-role Auth</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/MAHMOUD-AHMEDD/University_Learning"
+              target="_blank"
+              rel="noreferrer"
+              >View on GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">04</p>
+            <div class="project-head">
+              <h3>E-Commerce Platform</h3>
+              <span class="project-tag">Training Build</span>
+            </div>
+            <p>
+              E-commerce system with client/supplier/admin roles, product
+              management, shopping cart flows, order processing, and an admin
+              panel for operations.
+            </p>
+            <ul class="chip-list" aria-label="E-commerce tech stack">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>MVC</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/MAHMOUD-AHMEDD/e-commerce"
+              target="_blank"
+              rel="noreferrer"
+              >View on GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-interface">
+          <div class="skills-tabs" role="tablist" aria-label="Technical skill categories">
+            <button
+              type="button"
+              class="skills-tab is-active"
+              id="skills-tab-backend"
+              role="tab"
+              aria-selected="true"
+              aria-controls="skills-panel-backend"
+              data-target="skills-panel-backend"
+            >
+              <i class="fa-solid fa-server" aria-hidden="true"></i><span>Backend</span>
+            </button>
+            <button
+              type="button"
+              class="skills-tab"
+              id="skills-tab-auth"
+              role="tab"
+              aria-selected="false"
+              aria-controls="skills-panel-auth"
+              data-target="skills-panel-auth"
+              tabindex="-1"
+            >
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Auth &amp; APIs</span>
+            </button>
+            <button
+              type="button"
+              class="skills-tab"
+              id="skills-tab-db"
+              role="tab"
+              aria-selected="false"
+              aria-controls="skills-panel-db"
+              data-target="skills-panel-db"
+              tabindex="-1"
+            >
+              <i class="fa-solid fa-database" aria-hidden="true"></i><span>Databases</span>
+            </button>
+            <button
+              type="button"
+              class="skills-tab"
+              id="skills-tab-cloud"
+              role="tab"
+              aria-selected="false"
+              aria-controls="skills-panel-cloud"
+              data-target="skills-panel-cloud"
+              tabindex="-1"
+            >
+              <i class="fa-solid fa-cloud" aria-hidden="true"></i><span>Cloud &amp; DevOps</span>
+            </button>
+            <button
+              type="button"
+              class="skills-tab"
+              id="skills-tab-languages"
+              role="tab"
+              aria-selected="false"
+              aria-controls="skills-panel-languages"
+              data-target="skills-panel-languages"
+              tabindex="-1"
+            >
+              <i class="fa-solid fa-code" aria-hidden="true"></i><span>Languages</span>
+            </button>
+            <button
+              type="button"
+              class="skills-tab"
+              id="skills-tab-tools"
+              role="tab"
+              aria-selected="false"
+              aria-controls="skills-panel-tools"
+              data-target="skills-panel-tools"
+              tabindex="-1"
+            >
+              <i class="fa-solid fa-toolbox" aria-hidden="true"></i><span>Tools</span>
+            </button>
+          </div>
+
+          <section
+            class="skills-panel is-active"
+            id="skills-panel-backend"
+            role="tabpanel"
+            aria-labelledby="skills-tab-backend"
+          >
+            <div class="skills-tiles">
+              <article class="skill-tile"><i class="fa-brands fa-microsoft" aria-hidden="true"></i><span>.NET</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-hashtag" aria-hidden="true"></i><span>C#</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>ASP.NET Core</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Clean Architecture</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span>CQRS</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i><span>EF Core</span></article>
+            </div>
+          </section>
+
+          <section
+            class="skills-panel"
+            id="skills-panel-auth"
+            role="tabpanel"
+            aria-labelledby="skills-tab-auth"
+            hidden
+          >
+            <div class="skills-tiles">
+              <article class="skill-tile"><i class="fa-solid fa-id-card" aria-hidden="true"></i><span>ASP.NET Core Identity</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-key" aria-hidden="true"></i><span>JWT</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-user-check" aria-hidden="true"></i><span>OAuth2</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Swagger / OpenAPI</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-route" aria-hidden="true"></i><span>REST APIs</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>FluentValidation</span></article>
+            </div>
+          </section>
+
+          <section
+            class="skills-panel"
+            id="skills-panel-db"
+            role="tabpanel"
+            aria-labelledby="skills-tab-db"
+            hidden
+          >
+            <div class="skills-tiles">
+              <article class="skill-tile"><i class="fa-solid fa-database" aria-hidden="true"></i><span>SQL Server</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-database" aria-hidden="true"></i><span>MySQL</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-code-compare" aria-hidden="true"></i><span>LINQ</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-table-columns" aria-hidden="true"></i><span>Migrations</span></article>
+            </div>
+          </section>
+
+          <section
+            class="skills-panel"
+            id="skills-panel-cloud"
+            role="tabpanel"
+            aria-labelledby="skills-tab-cloud"
+            hidden
+          >
+            <div class="skills-tiles">
+              <article class="skill-tile"><i class="fa-brands fa-aws" aria-hidden="true"></i><span>AWS</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-server" aria-hidden="true"></i><span>EC2</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-network-wired" aria-hidden="true"></i><span>VPC</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-lock" aria-hidden="true"></i><span>IAM</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i><span>S3 / RDS</span></article>
+              <article class="skill-tile"><i class="fa-brands fa-docker" aria-hidden="true"></i><span>Docker</span></article>
+            </div>
+          </section>
+
+          <section
+            class="skills-panel"
+            id="skills-panel-languages"
+            role="tabpanel"
+            aria-labelledby="skills-tab-languages"
+            hidden
+          >
+            <div class="skills-tiles">
+              <article class="skill-tile"><i class="fa-solid fa-hashtag" aria-hidden="true"></i><span>C#</span></article>
+              <article class="skill-tile"><i class="fa-brands fa-python" aria-hidden="true"></i><span>Python</span></article>
+              <article class="skill-tile"><i class="fa-brands fa-php" aria-hidden="true"></i><span>PHP / Laravel</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-code" aria-hidden="true"></i><span>C++</span></article>
+            </div>
+          </section>
+
+          <section
+            class="skills-panel"
+            id="skills-panel-tools"
+            role="tabpanel"
+            aria-labelledby="skills-tab-tools"
+            hidden
+          >
+            <div class="skills-tiles">
+              <article class="skill-tile"><i class="fa-brands fa-git-alt" aria-hidden="true"></i><span>Git</span></article>
+              <article class="skill-tile"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span>Visual Studio</span></article>
+              <article class="skill-tile"><i class="fa-solid fa-terminal" aria-hidden="true"></i><span>VS Code</span></article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="journey" class="section">
+        <h2 class="section-title">Journey</h2>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <strong>AWS Cloud Trainee — NTI</strong> (Dec 2025 – Feb 2026):
+                120-hour Digital Egypt Youth Program, score 98%, AWS Certified
+                Cloud Practitioner. Covered EC2, VPC, IAM, S3, RDS, ECS,
+                Lambda, high availability, fault tolerance, and cost
+                optimization.
+              </li>
+              <li>
+                <strong>Backend Developer Trainee — DEPI</strong> (Apr 2024 –
+                Oct 2024): backend training with PHP/Laravel; built and deployed
+                an e-commerce platform and university management system.
+              </li>
+            </ul>
+          </article>
+          <article class="timeline-card">
+            <h3>Education</h3>
+            <p>
+              <strong
+                >B.Sc. Computer Science &amp; Artificial Intelligence</strong
+              ><br />
+              Fayoum University, 2022–2026 (expected graduation: mid-2026)
+            </p>
+          </article>
+          <article class="timeline-card">
+            <h3>Achievements &amp; Certification</h3>
+            <ul>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>ECPC/ACPC participant</li>
+              <li>ECPC Community Volunteer (Sep 2023 – Sep 2024)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="section-title">Contact</h2>
+        <p>
+          If you want to talk about backend roles, architecture decisions, or a
+          project idea, I’m happy to connect.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span>Phone</span>
+            <a href="tel:+201010530107">01010530107</a>
+          </li>
+          <li>
+            <span>Email</span>
+            <a href="mailto:mahmoudsoliman.dev@gmail.com"
+              >mahmoudsoliman.dev@gmail.com</a
+            >
+          </li>
+          <li>
+            <span>LinkedIn</span>
+            <a
+              href="https://linkedin.com/in/mahmoud-soliman-backend"
+              target="_blank"
+              rel="noreferrer"
+              >linkedin.com/in/mahmoud-soliman-backend</a
+            >
+          </li>
+          <li>
+            <span>GitHub</span>
+            <a
+              href="https://github.com/MAHMOUD-AHMEDD"
+              target="_blank"
+              rel="noreferrer"
+              >github.com/MAHMOUD-AHMEDD</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Mahmoud Soliman</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
